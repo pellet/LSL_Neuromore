@@ -41,11 +41,14 @@ if __name__ == "__main__":
     port = 4545
     stream_time_sec = 3600
     muse_channels = [
-        "/muse/tp9",
-        "/muse/af7",
-        "/muse/af8",
-        "/muse/tp10",
-        "/muse/aux"
+        "/openbci/Fp1",
+        "/openbci/Fp2",
+        "/openbci/C3",
+        "/openbci/C4",
+        "/openbci/P3",
+        "/openbci/P4",
+        "/openbci/T3",
+        "/openbci/T4"
     ]
 
     streamer = LslToOscStreamer(host, port, muse_channels)
